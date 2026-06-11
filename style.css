@@ -2,6 +2,13 @@
 *{
     margin: 0;
 }
+header{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 body{
     background-color: rgba(107, 53, 0, 0.65);
 }
@@ -67,8 +74,8 @@ footer>*{
     align-items: center;
 }
 .nach{
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     padding: 100px;
 }
 #prav{
@@ -79,4 +86,42 @@ footer>*{
     width: 107px;
     height: 87px;
     margin: 30px;
+}
+.nam{
+    font-weight: 400;
+}
+.figuri{
+    transform: scale(1);
+}
+nav>a:hover{
+    animation: anim1 5s infinite;
+}
+.information{
+    animation: anim2 3s infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
+}
+.information:hover{
+    animation-play-state: paused;
+}
+@keyframes anim2{
+    0%{
+        color: #E0B54B;
+    }
+    50%{
+        color:white;
+    }
+    100%{
+        color: #E0B54B;
+    }
+}
+@keyframes anim1{
+    0%{
+        color: #C09015;
+    }
+    100%{
+        color: #C09015;
+    }
 }
